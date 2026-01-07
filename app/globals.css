@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #777777;
+  --accent: #f5c21a;
+}
+
+html,body,#root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Manrope, 'DM Sans', 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header-nav a {
+  color: var(--text);
+}
+
+.yellow-button {
+  background-color: var(--accent);
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.footer-link {
+  color: var(--muted);
+}
+
+.hero-image-wrap {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.aspect-4-3 {
+  position: relative;
+  padding-bottom: 75%;
+  width: 100%;
+}
+
+.aspect-16-9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+}
+
+img.react-image {
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .nav-grid { display: none; }
+}
+
